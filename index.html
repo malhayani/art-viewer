@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Art Institute of Chicago Artwork</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" async></script>
+</head>
+
+<body>
+  <div class="search-container">
+    <input id="searchInput" class="search-input" type="text" placeholder="Search..." />
+    <button id="searchBtn" class="btn search-btn">
+      <div class="search-icon">&#9906;</div>
+    </button>
+  </div>
+  <div class="data-container">
+    <div id="loader" class="loader hidden"></div>
+    <div id="artworkList" class="artwork-list"></div>
+  </div>
+  <div class="button-container">
+    <button id="previousBtn" disabled class="btn secondary-btn">Previous</button>
+    <button id="nextBtn" class="btn primary-btn">Next</button>
+  </div>
+</body>
+
+</html>

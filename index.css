@@ -1,0 +1,177 @@
+html {
+  font-size: 16px;
+  font-family: "Ideal Sans A", "Ideal Sans B", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.data-container {
+  height: calc(100% - 9rem);
+  overflow: auto;
+  background-color: #f3f5f7;
+}
+
+.search-container {  
+  box-sizing: border-box;
+  height: 4.5rem;
+  padding: 1rem 0rem;
+  text-align: center;
+  border-bottom: 1px solid #cfd4db;
+}
+
+.button-container {
+  box-sizing: border-box;
+  height: 4.5rem;
+  position: fixed;
+  bottom: 0;
+  padding: 1rem 0rem;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #cfd4db;
+}
+
+.search-input {
+  width: 9.5rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  border-radius: 1.25rem;
+  border: 1px solid #cfd4db;  
+  outline: none;
+  padding: 0rem 1rem;
+  vertical-align: middle;
+}
+
+.search-input:focus {
+  border-width: 2px;  
+}
+
+.search-icon {
+  -webkit-transform: rotate(45deg); 
+  -moz-transform: rotate(45deg); 
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  font-size: 1.5rem;
+}
+
+.btn {
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #b50938; 
+  color: #fff;
+  vertical-align: middle;
+}
+
+.search-btn:hover {
+  filter: brightness(110%);
+}
+
+.search-btn:focus {
+  font-weight: 700;
+}
+
+.primary-btn {
+  background-color: #b50938; 
+  color: #fff;
+}
+
+.primary-btn:hover {
+  filter: brightness(110%);
+}
+
+.primary-btn:focus {
+  font-weight: 700;
+}
+
+.secondary-btn {
+  background-color: #eaecef; 
+}
+
+.secondary-btn:hover {
+  filter: brightness(90%);
+}
+
+.secondary-btn:focus {
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+.loader {
+  margin: auto;
+  margin-top: 10%;
+  box-sizing: border-box;
+  border: 12px solid #cfd4db;
+  border-top: 12px solid #b50938; 
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.artwork-list {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.artwork-container {
+  width: 30rem;
+  height: 20rem;
+  max-height: 20rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  box-shadow: 0.1rem 0.1rem 0.6rem #cfd4db, -0.1rem -0.1rem 0.6rem #cfd4db;
+}
+
+.artwork-container__image-container {
+  height: 13rem;
+  padding: 1rem;
+}
+
+.artwork-container__image-container__image {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.artwork-container__title {
+  font-size: 1rem;
+  margin: 0.25rem 0rem;
+}
+
+.artwork-container__artist {
+  font-size: 0.8rem;
+  margin: 0.25rem 0rem;
+}
+
+.artwork-container__date {
+  font-size: 0.8rem;
+  margin: 0.25rem 0rem;
+  font-style: italic;
+}
